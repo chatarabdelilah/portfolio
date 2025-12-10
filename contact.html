@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/phone.svg" alt="" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">Over mij</a></li>
+        <li><a href="projects.html">Projecten</a></li>
+        <li><a href="wpl.html">Werkplekleren</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Contactformulier</h1>
+      <section>
+        <form class="contact-form" action="php/mailform.php" method="POST">
+          <label for="name" class="contact-form-labels">Volledige Naam</label>
+          <input
+            class="contact-form-textbox"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Voer hier uw naam in"
+            required
+          />
+
+          <label for="email" class="contact-form-labels">Email Adres</label>
+          <input
+            class="contact-form-textbox"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Voer hier uw email in"
+            required
+          />
+
+          <label for="subject" class="contact-form-labels">Onderwerp</label>
+          <textarea
+            class="contact-form-textbox"
+            id="subject"
+            name="subject"
+            placeholder="Voer hier het onderwerp in"
+            required
+          ></textarea>
+
+          <label for="message" class="contact-form-labels">Bericht</label>
+          <textarea
+            class="contact-form-textbox"
+            id="message"
+            name="message"
+            placeholder="Voer hier uw bericht in..."
+            required
+          ></textarea>
+
+          <input type="submit" class="contact-form-button" value="Verstuur" />
+        </form>
+
+        <aside class="contact-aside">
+          <article>
+            <h3>Contact Informatie</h3>
+            <p>chatar.abdelilah.s@gmail.com</p>
+          </article>
+
+          <article>
+            <h3>Vind mij op de web</h3>
+            <a href="https://github.com/chatarabdelilah" target="_blank"
+              ><img src="./assets/github.svg" alt="GitHub Logo"
+            /></a>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Chatar Abdelilah Salim</p>
+    </footer>
+  </body>
+</html>
