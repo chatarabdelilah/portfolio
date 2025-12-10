@@ -110,7 +110,7 @@ main section {
 }
 
 .main-section {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 /* CONTACT */
@@ -223,4 +223,10 @@ footer {
   box-shadow: 0 -1px 4px var(--border);
   box-sizing: border-box;
   padding: 0 1rem;
+}
+
+#current-page {
+  color: var(--bg-light);
+  background-color: var(--buttons);
+  border-radius: 8px;
 }
